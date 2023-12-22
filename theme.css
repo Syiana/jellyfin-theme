@@ -2,9 +2,9 @@
 
 /* Increase size of Jellyfin logo */
 .layout-desktop .pageTitleWithLogo {
-    margin-left: 15px !important;
+    /* margin-left: 15px !important; */
     height: 40px !important;
-    margin-top: 5px !important;
+    /* margin-top: 5px !important; */
 }
 
 /* Fix for Jellyfin Media Player */
@@ -70,10 +70,7 @@
     top: 0;
 }
 .playedIndicator {
-    background: #32de84 !important;
-    box-shadow: none;
-    padding: 0.1rem;
-    border-radius: 0 0 0 10px;
+    background: #32de84d4 !important;
 }
 
 
@@ -99,7 +96,7 @@
 }
 /* Fix for header buttons */
 .layout-desktop .emby-button-foreground {
-    top: -9px !important;
+    top: -1px !important;
 }
 
 
@@ -115,10 +112,11 @@
 
 /* Transparent header bar */
 .skinHeader {
+    /* padding: 0; */
     background-color: transparent !important;
 }
-.layout-desktop .skinHeader {
-    padding-top: 1.5em !important;
+.skinHeader .headerTop {
+   padding: 1rem;
 }
 /* Rounded header buttons */
 .headerTabs,
@@ -130,7 +128,7 @@
 }
 .layout-desktop .headerTabs,
 .layout-desktop .headerRight {
-    margin-bottom: 10px !important;
+    /* margin-bottom: 10px !important; */
 }
 /* Button height */
 .emby-tab-button {
@@ -139,13 +137,13 @@
 }
 /* Lower header and add padding to right buttons */
 .layout-desktop .headerRight {
-    padding: 0px 5px !important;
+    /* padding: 0px 5px !important; */
     padding: 0.1rem;
 }
 /* Move left header back up */
 .layout-desktop .headerLeft {
     position: relative !important;
-    top: -17px !important;
+    /* top: -17px !important; */
 }
 /* Mobile fixes */
 .layout-mobile .headroom--unpinned {
@@ -161,9 +159,10 @@
 }
 
 .countIndicator, .fullSyncIndicator, .mediaSourceIndicator, .playedIndicator {
-    background: #bcbcbc2b;
-    color: white;
+    background: #ffffff26;
     backdrop-filter: blur(10px);
+    box-shadow: none;
+    border-radius: 0 0 0 10px;
 }
 
 
@@ -456,13 +455,13 @@
 }
 @media (max-width: 1599px) {
     .layout-desktop .pageTitleWithLogo {
-        margin-left: 25px !important;
+        /* margin-left: 25px !important; */
     }
     .layout-desktop .headerTabs {
         margin-top: -65px !important;
     }
     .layout-desktop .headerRight {
-        margin-right: 15px !important;
+        /* margin-right: 15px !important; */
     }
     .layout-desktop .sectionTabs {
         width: auto !important;
