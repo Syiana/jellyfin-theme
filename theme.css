@@ -269,12 +269,19 @@
 }
 
 /* Add card around top-right buttons */
+.mainDetailButtons .detailButton {
+    backdrop-filter: blur(40px) !important;
+    border-radius: 50rem;
+    /* background: rgba(35, 35, 35, 0.5) !important; */
+}
+
 .layout-desktop .mainDetailButtons {
     /* background: rgb(147 147 147 / 19%) !important; */
     /* border-radius: 100px !important; */
     /* backdrop-filter: blur(10px) !important; */
     font-size: 1.5rem;
 }
+
 .layout-mobile .mainDetailButtons {
     background: #181818 !important;
     border-radius: 100px !important;
@@ -319,13 +326,11 @@
 
 /* Add card around track selection */
 .trackSelections {
-    display: flex;
-    max-width: none;
-    
+    /* display: flex; */
+    /* max-width: none; */
 }
 .layout-desktop .trackSelections {
     border-radius: 15px !important;
-    padding: 10px 20px !important;
     margin-top: 20px !important;
 }
 .layout-mobile .trackSelections {
