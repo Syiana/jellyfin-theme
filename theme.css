@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons/Font%20Awesome/light.css");
+
 /* Increase size of Jellyfin logo */
 .layout-desktop .pageTitleWithLogo {
     margin-left: 15px !important;
@@ -269,9 +271,10 @@
 
 /* Add card around top-right buttons */
 .layout-desktop .mainDetailButtons {
-    background: rgba(35, 35, 35, 0.5) !important;
-    border-radius: 100px !important;
-    backdrop-filter: blur(10px) !important;
+    /* background: rgb(147 147 147 / 19%) !important; */
+    /* border-radius: 100px !important; */
+    /* backdrop-filter: blur(10px) !important; */
+    font-size: 1.5rem;
 }
 .layout-mobile .mainDetailButtons {
     background: #181818 !important;
@@ -305,8 +308,8 @@
 .layout-desktop .detailSectionContent {
     background: rgba(35, 35, 35, 0.5) !important;
     border-radius: 15px !important;
-    padding: 40px 20px 10px 20px !important;
-    margin-top: 50px !important;
+    padding: 10px 20px 10px 20px !important;
+    margin-top: 1.5em;
     backdrop-filter: blur(40px) !important;
 }
 .layout-mobile .detailSectionContent {
@@ -316,12 +319,15 @@
 }
 
 /* Add card around track selection */
+.trackSelections {
+    display: flex;
+    max-width: none;
+    
+}
 .layout-desktop .trackSelections {
-    background: rgba(35, 35, 35, 0.5) !important;
     border-radius: 15px !important;
     padding: 10px 20px !important;
     margin-top: 20px !important;
-    backdrop-filter: blur(40px) !important;
 }
 .layout-mobile .trackSelections {
     background: #181818 !important;
@@ -337,7 +343,7 @@
 
 /* Re-position title */
 .layout-desktop .infoWrapper {
-    margin-top: 245px !important;
+    margin-top: 160px !important;
 }
 .layout-desktop .detailPagePrimaryContainer {
     padding-left: 4% !important;
@@ -347,9 +353,7 @@
     margin-top: -55px !important;
 }
 .layout-desktop .itemMiscInfo {
-    position: absolute !important;
-    margin-left: 21px !important;
-    margin-top: 16px !important;
+
 }
 
 /* Move track selection box */
@@ -361,25 +365,15 @@
     -moz-box-orient: vertical;
     box-orient: vertical;
 }
-.detailSection .detailSectionContent {
-    -webkit-box-ordinal-group: 1;
-    -moz-box-ordinal-group: 1;
-    box-ordinal-group: 1;
-}
+.detailSection .detailSectionContent {font-weight: 600;}
 .detailSection .recordingFields {
-    -webkit-box-ordinal-group: 2;
-    -moz-box-ordinal-group: 2;
-    box-ordinal-group: 2;
+
 }
 .detailSection .trackSelections {
-    -webkit-box-ordinal-group: 3;
-    -moz-box-ordinal-group: 3;
-    box-ordinal-group: 3;
+
 }
 .detailSection .itemDetailsGroup {
-    -webkit-box-ordinal-group: 4;
-    -moz-box-ordinal-group: 4;
-    box-ordinal-group: 4;
+
 }
 /* Fix for backdrops */
 .layout-desktop #itemBackdrop {
@@ -390,24 +384,12 @@
 }
 /* Move episode title */
 .layout-desktop .nameContainer {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    -webkit-box-orient: horizontal;
-    -moz-box-orient: horizontal;
-    box-orient: horizontal;
+
 }
 .layout-desktop .nameContainer .parentName {
-    -webkit-box-ordinal-group: 1;
-    -moz-box-ordinal-group: 1;
-    box-ordinal-group: 1;
+
 }
-.layout-desktop .nameContainer .itemName {
-    -webkit-box-ordinal-group: 2;
-    -moz-box-ordinal-group: 2;
-    box-ordinal-group: 2;
-    margin: 0.45em 0 0 0 !important;
-}
+.layout-desktop .nameContainer .itemName {display: none;}
 
 
 
@@ -495,3 +477,4 @@
     padding: 3px;
     border-radius: 10px !important;
 }
+
