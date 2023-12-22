@@ -63,9 +63,15 @@
 
 
 /* Green watched indicator */
+.cardIndicators {
+    right: 0;
+    top: 0;
+}
 .playedIndicator {
     background: #32de84 !important;
     box-shadow: none;
+    padding: 0.1rem;
+    border-radius: 0 0 0 10px;
 }
 
 
